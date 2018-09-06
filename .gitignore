@@ -10,6 +10,7 @@ wp-content/mu-plugins/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
 wp-content/themes/senorcoders/node_modules/
+wp-content/themes/senorcoders/.sass-cache/
 
 /.htaccess
 /license.txt

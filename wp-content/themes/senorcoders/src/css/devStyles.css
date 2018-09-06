@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
  /* //how to use it
  container {
     padding: 0 15px;
@@ -139,9 +140,6 @@ footer {
         justify-self: left;
         margin-bottom: 1.5em;
         margin-left: 1em; } }
-    @media (max-width: 540px) {
-      footer .logo {
-        justify-self: right; } }
   footer .widget-1 {
     grid-area: w1; }
   footer .widget-2 {
@@ -164,6 +162,9 @@ footer {
 body, html {
   margin: 0px;
   padding: 0px; }
+
+h1, h2, h3, h4, h5, h6, span, strong, sup, div, a {
+  font-family: 'Roboto', sans-serif; }
 
 a {
   color: #00fff3;
