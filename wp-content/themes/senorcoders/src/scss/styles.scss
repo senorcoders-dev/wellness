@@ -1,0 +1,52 @@
+@import 'variables';
+@import 'responsive';
+@import 'header';
+@import 'frontpage';
+
+@import 'footer';
+
+body, html {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+a {
+    color: $link_color;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+
+    &:hover, &:focus, &:active {
+        color: $link_color_hover;
+    }    
+    &:visited {
+        color: $link_color;
+    }
+
+    &:focus {
+        outline: thin dotted;
+    }
+
+    &:hover, &:active {
+        outline: 0;
+    }
+
+    &.btn {
+        padding: 0.5em 1em;
+        background-color: $btn_color !important;
+        color: $btn_text !important;
+        &:hover {
+            background-color: $btn_color_hover !important;
+            color: $btn_text_hover !important;
+        }
+    }
+}
+
+.btn {
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    
+    &:hover {
+
+    }
+}

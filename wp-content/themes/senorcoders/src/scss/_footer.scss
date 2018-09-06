@@ -1,0 +1,91 @@
+footer {
+    padding: 2em 0em;
+    background-color: #000;
+    display: grid;
+    grid-template-areas: 
+        "logo w1 w2 w3"
+        "copyright copyright copyright copyright";
+    grid-template-columns: "20% auto auto auto";
+
+    @include lg {
+        grid-template-areas: 
+        "logo"
+        "w1"
+        "w2"
+        "w3"
+        "copyright";        
+    }
+    
+    h2.widget {
+        margin-bottom: 0.5em;
+        color: $primary_color;            
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 1.3em;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+        
+        li {
+            margin-top: 0.5em;
+            color: #fff;
+            
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+
+    ul.sc_social li {
+        display: inline;
+        margin: 0px 1em 0em 0em;
+    }
+   
+    p {
+        color: #fff;
+    }
+
+    .logo {
+        grid-area: logo;
+        align-self: center;
+        justify-self: center;
+
+        @include md {
+            justify-self: left;
+            margin-bottom: 1.5em;
+            margin-left: 1em;
+        }
+
+    }
+    .widget-1 {
+        grid-area: w1;        
+    }
+    
+    .widget-2 {
+        grid-area: w2;        
+    }
+
+    .widget-3 {
+        grid-area: w3;        
+    }
+
+    .widget-1, .widget-2, .widget-3 {
+        align-self: initial;
+        justify-self: center;
+
+        @include lg {
+            justify-self: left;
+            margin-left: 1em;
+        }
+    }
+    .site-info {
+        margin-top: 1.5em;
+        grid-area: copyright;
+        align-self: center;
+        justify-self: center;
+    }
+}
