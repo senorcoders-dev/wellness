@@ -120,7 +120,7 @@ add_action( 'widgets_init', 'senorcoders_widgets_init' );
  * Enqueue scripts and styles.
  */
 function senorcoders_scripts() {
-	wp_enqueue_style('main-styles', get_template_directory_uri() . '/src/css/devStyles.css', array(), filemtime(get_template_directory() . '/src/css/devStyles.css'), false);
+	wp_enqueue_style('main-styles', get_template_directory_uri() . '/senorcoders.min.css', array(), filemtime(get_template_directory() . '/src/css/devStyles.css'), false);
 	
 	wp_enqueue_style( 'senorcoders-style', get_stylesheet_uri() );
 

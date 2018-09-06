@@ -3,14 +3,14 @@ module.exports = function(grunt) {
   sass: {
     dist: {
       files: {
-        "src/css/devStyles.css" : "src/scss/styles.scss"
+        "src/css/senorcoders.css" : "src/scss/styles.scss"
       }
     }
   },
   uglify: {
     my_target: {
       options: {
-        beautify: true
+        beautify: false
       },
       files: {
         './js/senorcoders.min.js': ['src/js/**/*.js']
@@ -20,11 +20,22 @@ module.exports = function(grunt) {
   watch: {        
     css: {
       files: 'src/scss/**/*.scss',
-      tasks: ['sass'],
+      tasks: ['sass','cssmin'],
     },
     js: {
       files: 'src/js/**/*.js',
       tasks: ['uglify'],
+    }
+  },
+  cssmin: {
+    options: {
+      mergeIntoShorthands: false,
+      roundingPrecision: -1
+    },
+    target: {
+      files: {
+        'senorcoders.min.css': ['src/css/senorcoders.css']
+      }
     }
   },
   browserSync: {
@@ -47,8 +58,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+
     grunt.registerTask('default', [
-      'browserSync',
       'watch'
     ]);
   };
