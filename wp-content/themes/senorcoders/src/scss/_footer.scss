@@ -15,7 +15,10 @@ footer {
         "w3"
         "copyright";        
     }
-    
+     @include rwd(900) {
+        margin-bottom: 120px;
+        margin-top: 120px;
+    }
     h2.widget {
         margin-bottom: 0.5em;
         color: $primary_color;            
