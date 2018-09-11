@@ -51,7 +51,7 @@ footer {
 
     .logo {
         grid-area: logo;
-        align-self: center;
+        align-self: start;
         justify-self: center;
 
         @include md {

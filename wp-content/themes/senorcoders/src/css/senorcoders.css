@@ -933,7 +933,7 @@ footer {
     color: #fff; }
   footer .logo {
     grid-area: logo;
-    align-self: center;
+    align-self: start;
     justify-self: center; }
     @media (max-width: 768px) {
       footer .logo {
@@ -973,7 +973,7 @@ a {
   a:hover, a:focus, a:active {
     color: white; }
   a:visited {
-    color: #00fff3; }
+    color: #fff; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {

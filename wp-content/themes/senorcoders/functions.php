@@ -46,7 +46,29 @@ if ( ! function_exists( 'senorcoders_setup' ) ) :
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'senorcoders' ),
 		) );
+    /**
+     * Add a home link to your menu
+     *
+     * @since 4.0
+     */
+    function wpex_add_menu_home_link( $items, $args ) {
 
+      // Only used for the main menu
+      if ( 'menu-1' != $args->theme_location ) {
+        return $items;
+      }
+
+      // Create home link
+      $home_link = '<li><a href="' . esc_url( home_url( '/' ) ) . '">Home</a></li>';
+
+      // Add home link to the menu items
+      $items = $home_link . $items;
+
+      // Return menu items
+      return $items;
+
+    }
+    add_filter( 'wp_nav_menu_items', 'wpex_add_menu_home_link', 10, 2 );
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
@@ -120,7 +142,8 @@ add_action( 'widgets_init', 'senorcoders_widgets_init' );
  * Enqueue scripts and styles.
  */
 function senorcoders_scripts() {
-	wp_enqueue_style('main-styles', get_template_directory_uri() . '/senorcoders.min.css', array(), filemtime(get_template_directory() . '/src/css/devStyles.css'), false);
+	//wp_enqueue_style('main-styles', get_template_directory_uri() . '/senorcoders.min.css', array(), filemtime(get_template_directory() . '/src/css/devStyles.css'), false); //live
+  wp_enqueue_style('main-styles', get_template_directory_uri() . '/src/css/senorcoders.css', array(), filemtime(get_template_directory() . '/src/css/devStyles.css'), false); //dev
 	
 	wp_enqueue_style( 'senorcoders-style', get_stylesheet_uri() );
 
