@@ -15,10 +15,7 @@ footer {
         "w3"
         "copyright";        
     }
-     @include rwd(900) {
-        margin-bottom: 120px;
-        margin-top: 120px;
-    }
+
     h2.widget {
         margin-bottom: 0.5em;
         color: $primary_color;            
@@ -62,7 +59,6 @@ footer {
             margin-bottom: 1.5em;
             margin-left: 1em;
         }
-
     }
     .widget-1 {
         grid-area: w1;        
