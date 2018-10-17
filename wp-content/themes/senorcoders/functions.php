@@ -194,3 +194,5 @@ require get_template_directory() . '/inc/custom_acf.php';
 require get_template_directory() . '/inc/widgets.php';
 
 require get_template_directory() . '/inc/custom_shortcodes.php';
+
+require get_template_directory() . '/inc/cpt.php';
