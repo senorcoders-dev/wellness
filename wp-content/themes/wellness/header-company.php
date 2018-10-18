@@ -14,15 +14,20 @@
 <body  <?php body_class(); ?>>
     
 <!-- LOADER -->
-<!-- <div id="loader-wrapper">
+<!--<div id="loader-wrapper">
 <div id="loader"></div>
-</div> -->
+</div>-->
 <!-- LOADER -->
-    
+    <?php     
+        $challengeID = $_GET['challengeID'];        
+        $companyID = get_post_meta(($challengeID), 'company', true);
+        $company =  get_post( $companyID );        
+        $bannerURL = get_the_post_thumbnail_url( $companyID, 'large' );
+    ?>
     <!-- MAIN CONTAINER -->
     <div class="wrapper">
         <!-- MAIN HEADER -->
-        <div class="pages-header">
+        <div class="pages-header" style="background-image: url(<?php echo $bannerURL; ?>);">
             <div class="main-navbar">
                 <div class="navbar-wrapper">
                      <?php include 'template-parts/top-header.php'; ?>
@@ -51,6 +56,7 @@
                 </div>
             </div>
             
+
             <div class="main">
                     <div class="section">
                         <div class="pages-title">
@@ -58,7 +64,7 @@
                           <h1>404 ERROR</h1>
                           <p>Wellness / 404 Error</p>
                           <?php else: ?>
-                            <h1><?php the_title(); ?></h1>
+                            <h1><?php echo $company->post_title; ?></h1>
                           <p><?php the_breadcrumb(); ?></p>
                           <?php endif; ?>
                         </div>

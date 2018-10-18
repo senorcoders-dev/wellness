@@ -804,7 +804,7 @@ hr.training{
 }
 
 .trainer-social .social-icons .fa:hover{
-    color: #E58E00;
+    color: #8b1930;
 }
 
 .section-full h2{
@@ -1108,7 +1108,7 @@ hr.training{
 }
 
 .benefits-list .fa{
-    color: #E58E00;
+    color: #8b1930;
 }
 
 .box-trainers{
@@ -1132,7 +1132,7 @@ hr.training{
 }
 
 .social-icons-trainers .fa{
-    color: #E58E00;
+    color: #8b1930;
     font-size: 16px;
     transition: 0.3s;
 }
@@ -1177,7 +1177,7 @@ hr.training{
 
 .item-stars .fa{
     font-size: 18px;
-    color: #E58E00;
+    color: #8b1930;
 }
 
 .empty .fa{
@@ -1196,7 +1196,7 @@ hr.training{
 
 .media-body .item-stars .fa{
     font-size: 14px;
-    color: #E58E00;
+    color: #8b1930;
 }
 
 .media-body .empty .fa{
@@ -2202,7 +2202,7 @@ p.help{
 }
 
 .span-pricing.center{
-    background-color: #E58E00;
+    background-color: #8b1930;
 }
 
 
@@ -2234,8 +2234,8 @@ p.help{
 
 .span-pricing:hover .btn-default {
   color: #FFF;
-  background-color: #E58E00;
-  border-color: #E58E00;
+  background-color: #8b1930;
+  border-color: #8b1930;
 }
 
 .span-pricing h3{
@@ -2331,8 +2331,8 @@ hr.list {
 }
 .span-pricing .btn-default:hover {
   color: #FFF;
-  background-color: #E58E00;
-  border-color: #E58E00;
+  background-color: #8b1930;
+  border-color: #8b1930;
 }
 .span-pricing .btn-default:active,
 .span-pricing .btn-default.active,
@@ -2432,7 +2432,7 @@ hr.categories{
 }
 
 hr.short{
-    border-top: 2px solid #E58E00;
+    border-top: 2px solid #8b1930;
     margin: 30px 0px 20px 0px;
     width: 70px;
 }
@@ -2456,7 +2456,7 @@ hr.short{
 .related-post .media .media-body p{
     font-size: 12px;
     font-weight: normal;
-    color: #E58E00;
+    color: #8b1930;
 }
 
 .right-sidebar .related-post{
@@ -2473,8 +2473,8 @@ blockquote{
   line-height: 1.2;
   color: #666;
   text-align: justify;
-  border-left: 5px solid #E58E00;
-  border-right: 2px solid #E58E00;
+  border-left: 5px solid #8b1930;
+  border-right: 2px solid #8b1930;
   font-style: italic;
 }
 
@@ -2627,7 +2627,7 @@ main {
   transition: all 500ms;
 }
 .nav-item.active h4 {
-  color: #E58E00;
+  color: #8b1930;
   -webkit-transition: all 350ms;
   transition: all 350ms;
 }
@@ -3150,15 +3150,15 @@ code {
 
 .btn-warning {
   color: #fff;
-  background-color: #E58E00;
-  border-color: #E58E00;
+  background-color: #8b1930;
+  border-color: #8b1930;
   transition: 0.3s;
 }
 .btn-warning:focus,
 .btn-warning.focus {
   color: #fff;
-  background-color: #E58E00;
-  border-color: #E58E00;
+  background-color: #8b1930;
+  border-color: #8b1930;
 }
 .btn-warning:hover {
   color: #fff;
@@ -3243,7 +3243,7 @@ code {
 }
 
 .footer-social .social-icons .fa:hover{
-    color: #E58E00;
+    color: #8b1930;
 }
 
 .footer-middle{

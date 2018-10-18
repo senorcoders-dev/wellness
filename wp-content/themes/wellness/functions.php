@@ -21,8 +21,8 @@ add_action( 'wp_enqueue_scripts', 'add_style' );
     wp_enqueue_style( 'fontawesome2', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' ); 
     wp_enqueue_style( 'animate', 'http://cdn.bootcss.com/animate.css/3.5.1/animate.min.css' ); 
     wp_enqueue_style( 'animate2', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css' ); 
-
-    wp_enqueue_style( 'styleDev2', get_template_directory_uri(). '/css/customDev2.css.css' );
+    wp_enqueue_style( 'select2', 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css' );     
+    wp_enqueue_style( 'styleDev2', get_template_directory_uri(). '/css/customDev2.css' );
     wp_enqueue_style( 'styleTheme', get_template_directory_uri(). '/style.css' );      
   }
 
@@ -31,7 +31,7 @@ add_action( 'wp_enqueue_scripts', 'add_style' );
     
         
     // #JAVASCRIPTS
-       
+        wp_enqueue_script( 'accordionJS',get_template_directory_uri(). '/js/accordion.js' , array( 'jquery' ) );
         wp_enqueue_script( 'bootstrapJS',get_template_directory_uri(). '/js/bootstrap.js' , array( 'jquery' ) );
        // wp_enqueue_script( 'gallery',get_template_directory_uri(). '/js/gallery.js' , array( 'jquery' ) );
         wp_enqueue_script( 'returnTop',get_template_directory_uri(). '/js/return-top.js' , array( 'jquery' ) );
@@ -43,7 +43,10 @@ add_action( 'wp_enqueue_scripts', 'add_style' );
         wp_enqueue_script( 'filter',get_template_directory_uri(). '/js/filter.js' , array( 'jquery' ) );
         wp_enqueue_script( 'flickity', 'http://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.min.js', array( 'jquery' ) );
         wp_enqueue_script( 'customer',get_template_directory_uri(). '/js/customers.js' , array( 'jquery' ) );
+        wp_enqueue_script( 'select2', 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js' , array( 'jquery' ) );
+        wp_enqueue_script( 'customDev2', get_template_directory_uri(). '/js/customDev2.js' , array( 'jquery', 'select2' ) );        
         wp_enqueue_script( 'loader',get_template_directory_uri(). '/js/loader.js' , array( 'jquery' ) );
+
 
 
   }
@@ -51,6 +54,8 @@ add_action( 'wp_enqueue_scripts', 'add_style' );
   require get_template_directory() . '/inc/cpt.php';
 
   require get_template_directory() . '/inc/roles.php';
+
+  require get_template_directory() . '/inc/dev2ajax.php';
 
 function the_breadcrumb() {
  if (!is_home()) {

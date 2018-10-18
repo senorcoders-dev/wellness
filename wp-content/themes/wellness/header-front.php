@@ -12,9 +12,9 @@
 <body  <?php body_class(); ?>>
     
 <!-- LOADER -->
-<div id="loader-wrapper">
+<!-- <div id="loader-wrapper">
 <div id="loader"></div>
-</div>
+</div> -->
 <!-- LOADER -->
     
     <!-- MAIN CONTAINER -->

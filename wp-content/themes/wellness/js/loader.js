@@ -1,6 +1,6 @@
-$ = jQuery;
-$(document).ready(function () {
-   setTimeout(function () {
-     $('#loader-wrapper').fadeOut();
-   }, 1200);
-});
+// $ = jQuery;
+// $(document).ready(function () {
+//    setTimeout(function () {
+//      $('#loader-wrapper').fadeOut();
+//    }, 0);
+// });

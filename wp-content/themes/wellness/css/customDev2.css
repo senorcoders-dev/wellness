@@ -1,3 +1,8 @@
+.pages-header {
+    background-size: cover;
+    background-position: center center;
+}
+
 .register-form {
     display: grid;
     grid-template-columns: 100%;
@@ -12,7 +17,13 @@
                             "labelEmail email"
                             "labelPassword password"
                             "button button";
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 30% 68%;
+    width: 50%;
+    gap: 1em;
+    margin: auto;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    padding: 1.5em 2em;
 }
 
 .register-form form h3 {
@@ -21,17 +32,19 @@
     justify-self: left;
 }
 .register-form form h4 {
-    align-content: subititle;
+    grid-area: subtitle;
     align-self: center;
     justify-self: center;
 }
 .register-form form label {
     align-self: center;
     justify-self: right;
+    text-transform: uppercase;
 }
 .register-form form input {
     align-self: center;
     justify-self: left;
+    width: 100%;
 }
 .register-form form label.name {
     grid-area: labelName;
@@ -41,8 +54,8 @@
 }
 .register-form form label.team {
     grid-area: labelTeam;
-}
-.register-form form input.team {
+}   
+.register-form form select.team {
     grid-area: team;
 }
 .register-form form label.email {
@@ -59,4 +72,8 @@
 }
 .register-form form .btn {
     grid-area: button;
+    width: 68%;
+    align-self: center;
+    justify-self: right;
+    text-transform: uppercase;
 }
