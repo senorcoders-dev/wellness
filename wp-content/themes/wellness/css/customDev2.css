@@ -1,0 +1,62 @@
+.register-form {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.register-form form {
+    display: grid;
+    grid-template-areas:    "title title"
+                            "subtitle subtitle"
+                            "labelName name"
+                            "labelTeam team"
+                            "labelEmail email"
+                            "labelPassword password"
+                            "button button";
+    grid-template-columns: 50% 50%;
+}
+
+.register-form form h3 {
+    grid-area: title;
+    align-self: center;
+    justify-self: left;
+}
+.register-form form h4 {
+    align-content: subititle;
+    align-self: center;
+    justify-self: center;
+}
+.register-form form label {
+    align-self: center;
+    justify-self: right;
+}
+.register-form form input {
+    align-self: center;
+    justify-self: left;
+}
+.register-form form label.name {
+    grid-area: labelName;
+}
+.register-form form input.name {
+    grid-area: name;
+}
+.register-form form label.team {
+    grid-area: labelTeam;
+}
+.register-form form input.team {
+    grid-area: team;
+}
+.register-form form label.email {
+    grid-area: labelEmail;
+}
+.register-form form input.email {
+    grid-area: email;
+}
+.register-form form input.password {
+    grid-area: password;
+}
+.register-form form label.password {
+    grid-area: labelPassword;
+}
+.register-form form .btn {
+    grid-area: button;
+}
